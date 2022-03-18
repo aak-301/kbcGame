@@ -30,7 +30,7 @@
   font-weight: 100;
   position: absolute;
   bottom: 10px;
-  left: 80px;
+  left: 50%;
 }
 
 .bottom {
@@ -201,3 +201,76 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+  *{
+    padding:0;
+    margin: 0;
+    width: 100;
+  }
+  .main{
+    width: 65%;
+  }
+  .moneyListItemAmount{
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 300;
+  }
+  .moneylist{
+    padding: 3px;
+  }
+  .pyramid{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timer{
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 10px;
+    margin: auto;
+  }
+  .endText{
+    font-size: 20px;
+  }
+  .answers{
+    padding: 10px;
+  }
+  .answer{
+    width: 32%;
+    font-size: 15px;
+    overflow: hidden;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  *{
+    padding:0;
+    margin: 0;
+    width: 100;
+  }
+  .main{
+    width: 65%;
+  }
+  .moneyListItemAmount{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .moneylist{
+    padding: 20px;
+  }
+  .pyramid{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .endText{
+    font-size: 40px;
+  }
+
+}
+

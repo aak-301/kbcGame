@@ -41,6 +41,7 @@ export default function Question({
     );
 
     delay(5000, () => {
+      if (questionNumber > 12) return setStop(true);
       if (ans.correct) {
         correctAnswer();
         delay(1000, () => {
